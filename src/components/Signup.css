@@ -1,0 +1,15 @@
+.Signup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.signup-main{
+    background-color: #B7D1DA;
+    height: 100vh;
+}
+
+.button2{
+    margin-top: 8vw;
+}

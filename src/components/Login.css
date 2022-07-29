@@ -1,0 +1,39 @@
+.Login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.logo-wrapper{
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+}
+
+/* .logo{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.button{
+    display: flex;
+    align-items: center;
+    /* height: 100px; */
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.login-main{
+    background-color: #B7D1DA;
+    height: 100vh;
+    /* padding-top:20%;  */
+}
+
+.login-main > h4{
+    text-align: center;
+    margin-top: 10vw
+}

@@ -24,7 +24,7 @@
 
 .player > img{
     width: 30vw;
-    border: solid white;
+    border: 3px solid white;
     border-radius: 20px;
     flex-wrap: wrap;
     margin-bottom: 20px;

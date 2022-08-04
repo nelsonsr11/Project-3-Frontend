@@ -5,6 +5,9 @@ import "./PlayerDetails.css";
 import Arrow from "@mui/icons-material/KeyboardBackspace";
 import { useNavigate } from "react-router-dom";
 import logo from "./images/logo.png";
+import Box from "@mui/material/Box";
+import Rating from "@mui/material/Rating";
+import Typography from "@mui/material/Typography";
 
 const PlayerDetails = () => {
   const [playerDetails, setPlayerDetails] = React.useState({});
@@ -12,15 +15,16 @@ const PlayerDetails = () => {
   const [playerPos, setPlayerPos] = React.useState({});
   const params = useParams();
   const navigate = useNavigate();
+  const [value, setValue] = React.useState(0);
 
   const options = {
     method: "GET",
-    url: `https://api.statorium.com/api/v1/players/${params.playerID}/?season_id=95&apikey=abcbe80c8c87a1c85fd3b32f383b0b45`,
+    url: `https://api.statorium.com/api/v1/players/${params.playerID}/?season_id=95&apikey=${process.env.REACT_APP_API_KEY}`,
   };
 
   const options2 = {
     method: "GET",
-    url: `https://api.statorium.com/api/v1/players/${params.playerID}/?season_id=43&apikey=abcbe80c8c87a1c85fd3b32f383b0b45`,
+    url: `https://api.statorium.com/api/v1/players/${params.playerID}/?season_id=43&apikey=${process.env.REACT_APP_API_KEY}`,
   };
 
   // console.log(params.playerID);
@@ -77,7 +81,22 @@ const PlayerDetails = () => {
         <h4>Height: {playerInfo.height}</h4>
         <h4>Position: {playerPos.length > 0 && playerPos}</h4>
       </div>
-      {/* <button onClick={getPlayerDetails}>LOL</button> */}
+      <div className="rating">
+        <Box
+          sx={{
+            "& > legend": { mt: 1 },
+          }}
+        >
+          <Typography component="legend"></Typography>
+          <Rating
+            name="simple-controlled"
+            value={value}
+            onChange={(event, newValue) => {
+              setValue(newValue);
+            }}
+          />
+        </Box>
+      </div>
     </div>
   );
 };

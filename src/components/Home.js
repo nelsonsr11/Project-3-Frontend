@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
-// import "./Home.css";
+import "./Home.css";
 import { grey } from "@mui/material/colors";
 import { Link } from "react-router-dom";
 
@@ -55,7 +55,7 @@ const Home = () => {
           <MenuItem onClick={handleClose}>Logout</MenuItem>
         </Menu>
 
-        <Link to="/team" className="link2">
+        <Link to="/team" className="link1">
           <h4>GROUPS</h4>
         </Link>
         <Link to="/favorite-teams" className="link1">

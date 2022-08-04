@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap');
 
 
 .arrow{
@@ -47,7 +48,7 @@
 }
 
 .all-players{
-    background-color:#3A606E;;
+    background-color:#C1CAD6;;
     flex-wrap: wrap;
 }
 
@@ -70,3 +71,25 @@
     /* justify-content: space-evenly; */
     /* margin-bottom: 10px; */
     /* background-color:#B7D1DA;; */
+
+    .player-det{
+        margin-left: 15px;
+    }
+
+    .position{
+        color: #19647E
+    }
+
+    .player >img{
+        margin-left: 15px;
+    }
+
+    /* .line1{
+        margin-right: 40px;
+        margin-left: 40px;
+    } */
+
+    .all-players >h1{
+    font-family: 'Exo 2', sans-serif;
+    color: #19647E
+    }

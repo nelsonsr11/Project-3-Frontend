@@ -63,7 +63,7 @@ const TeamDetails = () => {
 
   const options2 = {
     method: "GET",
-    url: `https://api.statorium.com/api/v1/matches/?season_id=121&apikey=abcbe80c8c87a1c85fd3b32f383b0b45`,
+    url: `https://api.statorium.com/api/v1/matches/?season_id=121&apikey=${process.env.REACT_APP_API_KEY}`,
   };
 
   React.useEffect(() => {
@@ -130,8 +130,8 @@ const TeamDetails = () => {
         <div>
           <img height="180 " src={team.logo}></img>
         </div>
-        <div>
-          <h2>Teams Details</h2>
+        <div className="team-details1">
+          <h1>Teams Details</h1>
           <h4>Team Name: {team.teamName}</h4>
           <h4>Short Name: {team.shortName}</h4>
           <div className="buttons">

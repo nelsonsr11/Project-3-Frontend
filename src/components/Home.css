@@ -1,0 +1,26 @@
+.home{
+    background-image: url("./images/homeback.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon{
+    margin-left: 5px;
+}
+
+.home >img{
+    margin-right: 10px;
+}
+
+.link1{
+    text-decoration: none;
+    color: white;
+}

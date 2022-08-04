@@ -14,7 +14,7 @@ const Team = () => {
 
   const options = {
     method: "GET",
-    url: "https://api.statorium.com/api/v1/standings/121/?apikey=abcbe80c8c87a1c85fd3b32f383b0b45",
+    url: `https://api.statorium.com/api/v1/standings/121/?apikey=${process.env.REACT_APP_API_KEY}`,
   };
 
   const getWorldCup = async () => {

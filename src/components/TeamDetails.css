@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap');
+
 .arrow-team{
     display: flex;
     flex-direction: row;
@@ -91,7 +93,7 @@
 } */
 
 .team{
-    background-color:#3A606E;;
+    background-color:#C1CAD6;;
 }
 
 .game-table > h2{
@@ -117,4 +119,13 @@
 
 .love-button{
     margin-left: 10px;
+}
+
+.team-details1 > h1{
+    color: #19647E;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.game-table > h2{
+    font-family: 'Exo 2', sans-serif;
 }

@@ -26,13 +26,13 @@ const Players = () => {
 
   const options = {
     method: "GET",
-    // url: `https://api.statorium.com/api/v1/teams/427/?season_id=43&apikey=abcbe80c8c87a1c85fd3b32f383b0b45`,
-    url: `https://api.statorium.com/api/v1/teams/${params.teamID}/?season_id=95&apikey=abcbe80c8c87a1c85fd3b32f383b0b45`,
+
+    url: `https://api.statorium.com/api/v1/teams/${params.teamID}/?season_id=95&apikey=${process.env.REACT_APP_API_KEY}`,
   };
   const options2 = {
     method: "GET",
-    // url: `https://api.statorium.com/api/v1/teams/427/?season_id=43&apikey=abcbe80c8c87a1c85fd3b32f383b0b45`,
-    url: `https://api.statorium.com/api/v1/teams/${params.teamID}/?season_id=43&apikey=abcbe80c8c87a1c85fd3b32f383b0b45`,
+
+    url: `https://api.statorium.com/api/v1/teams/${params.teamID}/?season_id=43&apikey=${process.env.REACT_APP_API_KEY}`,
   };
 
   const getPlayers = async () => {
@@ -92,9 +92,13 @@ const Players = () => {
               <div className="player">
                 {/* <hr></hr> */}
                 <img width={50} src={brr.photo}></img>
-                <h3>{brr.fullName}</h3>
-                {/* <h3>{brr.playerNumber}</h3> */}
-                <h3>{determinePosition(brr)}</h3>
+                <div className="player-det">
+                  <h3>{brr.fullName}</h3>
+                  {/* <h3>{brr.playerNumber}</h3> */}
+                  <h3 className="position">
+                    Position: {determinePosition(brr)}
+                  </h3>
+                </div>
 
                 {/* {brr.players.map((player) => {
                   <h3>Position: {player.length > 0 && player.playerNumber}</h3>;

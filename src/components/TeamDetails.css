@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 5vw;
-    margin-top: 5vw;
+    margin-left: 3vw;
+    padding-top: 3vw;
+    justify-content: space-between;
+    color: aliceblue;
 }
 .team-details{
     display: flex;
@@ -20,4 +22,99 @@
 
 .players-link{
     text-decoration: none;
+}
+
+.game-table{
+    margin-top: 20vw;
+}
+
+.first-team{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10px; */
+    align-items: center;
+}
+
+.first-team > h4{
+    margin-top: -0.5px;
+    
+}
+
+.first-game{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.second-team{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: center;
+    
+}
+
+.second-team > h4{
+    margin-top: -0.5px;
+    /* margin-left: 4px; */
+    
+}
+
+.time-date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hour{
+    /* margin-top: -1px; */
+}
+
+.second-game{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.third-game{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+/* hr{
+    width: 250px;
+} */
+
+.team{
+    background-color:#3A606E;;
+}
+
+.game-table > h2{
+    text-align: center;
+}
+
+.arrow-team > img{
+    margin-right: 15px;
+}
+
+.text-wrap{
+    /* word-break: normal; */
+    word-break: break-all;
+    /* inline-size: 110px;  */
+    overflow-wrap: break-word;
+}
+
+.buttons{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.love-button{
+    margin-left: 10px;
 }

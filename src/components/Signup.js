@@ -43,7 +43,8 @@ const Signup = () => {
           profilePic: imgUrl,
         });
         console.log(response);
-        localStorage.setItem("token", response.data);
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("id", response.data.id);
         // setStatus("welcome");
         navigateCreate();
       } catch (err) {
@@ -65,7 +66,7 @@ const Signup = () => {
   return (
     <div className="signup-main">
       <div className="logo-wrapper">
-        <img width="200" src={logo} className="logo"></img>
+        <img width="130" src={logo} className="logo"></img>
       </div>
       {/* <form onSubmit={check}> */}
       <div className="Signup">
@@ -75,13 +76,13 @@ const Signup = () => {
           variant="filled"
           onChange={(e) => setFullname(e.target.value)}
         />
-        {/* <TextField
+        <TextField
           label={"Username"}
           color="primary"
           variant="filled"
           onChange={(e) => setUsername(e.target.value)}
           style={{ marginTop: 25 }}
-        /> */}
+        />
         <TextField
           label={"Email"}
           color="primary"
@@ -103,8 +104,9 @@ const Signup = () => {
           onChange={(e) => setPassword2(e.target.value)}
           style={{ marginTop: 25 }}
         />
-        {/* <label>ProfilePic</label> */}
+        {/* <label>PIC</label> */}
         {/* <input type="file" onChange={handleFileUpload} /> */}
+        {/* <img width="70" src={imgUrl}></img> */}
         <div className="button2">
           <Button onClick={check} disabled={loading} variant="contained">
             Sign Up
@@ -115,7 +117,7 @@ const Signup = () => {
       <h4>
         Already have an account? <Link to="/">LogIn</Link>
       </h4>
-      {/* <img src={imgUrl}></img> */}
+
       {/* </form> */}
     </div>
   );

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@300&display=swap');
+
+.post{
+    background: url("./images/default.jpeg") no-repeat top center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* margin-top: -20px; */
+
+}
+
+.post > h1{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.textarea {
+    width: 350px;
+    height: 80px;
+    display: flex;
+    align-content: center;
+    margin-left: 32px;
+    border: solid black;
+    border-radius: 8px;
+  }
+
+  .bottom-post{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    /* color: black; */
+    
+  }
+
+ .status{
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .image-upload>input {
+    display: none;
+  } */
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .user{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  .likes{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  .post1{
+    border: solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* box-shadow: inset 100px 100px 100px 100px white; */
+    backdrop-filter: blur(3px);
+
+  }
+
+  .image{
+    width: 100px;
+  }
+
+  .arrow-team1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3vw;
+    padding-top: 3vw;
+    justify-content: space-between;
+    color: black;
+}
+
+.arrow-team1 > img{
+    margin-right: 10px;
+}
+
+.content {
+    margin-left: 6px;
+    font-family: 'Gantari', sans-serif;
+}

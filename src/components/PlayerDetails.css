@@ -1,0 +1,24 @@
+.player-details{
+    color: black;
+    background-color: #3A606E;
+    height: 100vh;
+}
+
+.player-info{
+    border: solid white;
+    border-radius: 5vw;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+}
+
+.player-info > h4{
+    color: white;
+    margin-left: 15px;
+}
+

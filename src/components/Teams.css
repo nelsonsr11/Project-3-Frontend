@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap');
+.teams > h1{
+    text-align: center ;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.teams1 {
+    background-color: #A5ABAF
+}
+
+h5{
+    text-decoration: none;
+}
+
+.table1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid black;
+    border-radius:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* .pictures {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .table22{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+td{
+    text-align: center;
+}
+
+.team-flag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.team-flag > p{
+    text-decoration: none;
+}
+
+.link-teams{
+    text-decoration:none;
+    color: black;
+}

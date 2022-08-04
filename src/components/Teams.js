@@ -3,10 +3,14 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import TeamDetails from "./TeamDetails";
 import Table from "@mui/material/Table";
+import "./Teams.css";
+import logo from "./images/logo.png";
+import { useNavigate } from "react-router-dom";
+import Arrow from "@mui/icons-material/KeyboardBackspace";
 
 const Team = () => {
   const [teams, setTeams] = React.useState([]);
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const options = {
     method: "GET",
@@ -18,31 +22,74 @@ const Team = () => {
     console.log(response.data);
     setTeams(response.data.season.groups);
   };
-  console.log(teams);
 
   React.useEffect(() => {
     getWorldCup();
   }, []);
 
   return (
-    <div>
-      <h1>This is team</h1>
+    <div className="teams1">
+      {/* <h1>This is team</h1> */}
+      <div className="arrow">
+        <Arrow sx={{ fontSize: 40 }} onClick={() => navigate(-1)}>
+          Players
+        </Arrow>
+        {/* <h3>Team</h3> */}
+        <img width="50px" src={logo}></img>
+      </div>
 
       {/* <button onClick={getWorldCup}>Click</button> */}
       {teams.map((brr) => {
         return (
-          <div>
+          <div className="teams">
             <h1>{brr.groupName}</h1>
-            {brr.standings.map((standing) => {
-              return (
-                <div>
-                  <Link to={`/team/team-details/${standing.teamID}`}>
-                    <h3>{standing.teamName}</h3>
-                    <img width="80" src={standing.logo} alt="logo"></img>
-                  </Link>
-                </div>
-              );
-            })}
+            <div className="table1">
+              <table>
+                <thead>
+                  <tr className="tr">
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {brr.standings.map((standing) => {
+                    return (
+                      <tr>
+                        <td>1</td>
+                        <Link
+                          className="link-teams"
+                          to={`/team/team-details/${standing.teamID}`}
+                        >
+                          {/* <h5>{standing.teamName}</h5> */}
+                          <div className="team-flag">
+                            <td>
+                              <img
+                                width="50"
+                                src={standing.logo}
+                                alt="logo"
+                                title={standing.teamName}
+                              ></img>
+                              <div className="team-name">
+                                {/* <h5>{standing.teamName}</h5> */}
+                              </div>
+                            </td>
+                          </div>
+                        </Link>
+
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </div>
         );
       })}

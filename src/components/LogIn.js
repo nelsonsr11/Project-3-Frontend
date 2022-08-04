@@ -32,8 +32,9 @@ const LogIn = () => {
           username: username,
           password: password,
         });
-        console.log(response);
-        localStorage.setItem("token", response.data);
+        console.log(response.data);
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("id", response.data.id);
         navigateCreate();
       } catch (err) {
         console.error(err.message);

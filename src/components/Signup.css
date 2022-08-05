@@ -10,8 +10,11 @@
     height: 100vh;
 }
 
-.button2{
-    margin-top: 8vw;
+/* .button2{
+    margin-top: vw;
+} */
+.signup-main >h4{
+    text-align: center;
 }
 
 @media(min-width:1000px){

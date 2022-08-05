@@ -28,8 +28,11 @@ const Signup = () => {
 
   const check = async (e) => {
     e.preventDefault();
-    if (!fullname || !password || password.length < 6 || !email) {
+    if (!fullname || !password || !email) {
       setStatus("Please enter valid credentials for your account.");
+    }
+    if (password.length < 6) {
+      setStatus("Password should be 6 characters or longer ");
     }
     if (password !== password2) {
       setStatus("Password doesn't match");

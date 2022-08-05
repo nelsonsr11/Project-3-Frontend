@@ -11,6 +11,7 @@ import Post from "./components/Post";
 import Profile from "./components/Profile";
 import FavoriteTeams from "./components/FavoriteTeams";
 import AboutPage from "./components/AboutPage";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="/favorite-teams" element={<FavoriteTeams />}></Route>
         <Route path="/aboutus" element={<AboutPage />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>
   );

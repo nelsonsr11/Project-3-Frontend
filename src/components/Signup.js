@@ -107,6 +107,7 @@ const Signup = () => {
           variant="filled"
           onChange={(e) => setPassword(e.target.value)}
           style={{ marginTop: 25 }}
+          type="password"
         />
         <TextField
           label={"Re-Enter Password"}
@@ -114,6 +115,7 @@ const Signup = () => {
           variant="filled"
           onChange={(e) => setPassword2(e.target.value)}
           style={{ marginTop: 25 }}
+          type="password"
         />
         {/* <label>PIC</label> */}
         {/* <input type="file" onChange={handleFileUpload} /> */}

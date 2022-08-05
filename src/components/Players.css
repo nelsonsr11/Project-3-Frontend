@@ -106,12 +106,20 @@
         
             /* border-radius: 5vw; */
         }
+        .all-players  {
+            display: flex;
+            flex-direction: column;
+       
+        }
         .player{
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
         }
         .all-players >h1{
             font-size: 140px;
             margin-top: -10px;
+   
         }
     }

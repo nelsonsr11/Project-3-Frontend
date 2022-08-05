@@ -35,7 +35,9 @@ const Team = () => {
           Players
         </Arrow>
         {/* <h3>Team</h3> */}
-        <img width="50px" src={logo}></img>
+        <Link to="/">
+          <img width="50px" src={logo} className="logo-lap"></img>
+        </Link>
       </div>
 
       {/* <button onClick={getWorldCup}>Click</button> */}

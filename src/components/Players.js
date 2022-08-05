@@ -79,7 +79,9 @@ const Players = () => {
           Players
         </Arrow>
         {/* <h3>Team</h3> */}
-        <img width="50px" src={logo}></img>
+        <Link to="/">
+          <img className="logo-lap" width="50px" src={logo}></img>
+        </Link>
       </div>
       <h1>Team Players</h1>
       <div className="player-container">

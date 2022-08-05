@@ -17,6 +17,7 @@ import { red } from "@mui/material/colors";
 import Arrow from "@mui/icons-material/KeyboardBackspace";
 import logo from "./images/logo.png";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Post = () => {
   const [content, setContent] = React.useState("");
@@ -28,6 +29,7 @@ const Post = () => {
   // const [status, setStatus] = React.useState("");
   const newId = localStorage.getItem("id");
   const navigate = useNavigate();
+
   // const newId = localStorage.getItem("id");
 
   const check = async (e) => {
@@ -88,7 +90,9 @@ const Post = () => {
       <div className="arrow-team1">
         <Arrow sx={{ fontSize: 40 }} onClick={() => navigate(-1)}></Arrow>
         {/* <h3>Teams</h3> */}
-        <img width="50px" src={logo}></img>
+        <Link to="/">
+          <img width="50px" className="logo-lap" src={logo}></img>
+        </Link>
       </div>
       <h1>FANPAGE</h1>
       <form onSubmit={check}>

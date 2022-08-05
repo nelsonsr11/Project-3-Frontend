@@ -70,9 +70,6 @@
     justify-content: flex-end;
 }
 
-.hour{
-    /* margin-top: -1px; */
-}
 
 .second-game{
     flex-direction: row;
@@ -128,4 +125,25 @@
 
 .game-table > h2{
     font-family: 'Exo 2', sans-serif;
+}
+
+@media(min-width:1000px){
+    .team-details{
+        margin-top: -5px;
+        margin-bottom: -190px;
+    }
+    .pic-lap{
+        /* margin-left: 100px; */
+    }
+    .team-details1 > h1{
+font-size: 80px;
+    }
+    .game-table > h2{
+        font-size: 50px;
+    }
+    .team-details1 > h4{
+        font-size: 30px;
+     }
+
+    
 }

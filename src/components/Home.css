@@ -24,3 +24,20 @@
     text-decoration: none;
     color: white;
 }
+
+.profile1{
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width:1000px){
+    .home{
+        background-image: url("./images/back-laptop.jpg");
+        background-position: center;
+        background-size: cover;
+        background-color: black;
+    }
+    .link1{
+        font-size: 40;
+    }
+}

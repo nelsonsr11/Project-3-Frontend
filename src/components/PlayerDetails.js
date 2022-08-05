@@ -8,6 +8,7 @@ import logo from "./images/logo.png";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 
 const PlayerDetails = () => {
   const [playerDetails, setPlayerDetails] = React.useState({});
@@ -56,7 +57,9 @@ const PlayerDetails = () => {
         <Arrow sx={{ fontSize: 40 }} onClick={() => navigate(-1)}>
           Players
         </Arrow>
-        <img width="50px" src={logo}></img>
+        <Link to="/">
+          <img width="50px" className="logo-lap" src={logo}></img>
+        </Link>
       </div>
       {/* <h1>PLAYER DET</h1> */}
       <div className="picture">

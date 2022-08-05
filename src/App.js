@@ -10,6 +10,7 @@ import Post from "./components/Post";
 // import ViewComments from "./components/ViewComments";
 import Profile from "./components/Profile";
 import FavoriteTeams from "./components/FavoriteTeams";
+import AboutPage from "./components/AboutPage";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/posts" element={<Post />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
         <Route path="/favorite-teams" element={<FavoriteTeams />}></Route>
+        <Route path="/aboutus" element={<AboutPage />}></Route>
       </Routes>
     </div>
   );

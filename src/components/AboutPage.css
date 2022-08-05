@@ -1,0 +1,10 @@
+.arrow-team111{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutus{
+    background-color:#C1CAD6;;
+    height: 100vh;
+}

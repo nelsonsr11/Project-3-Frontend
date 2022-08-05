@@ -124,11 +124,13 @@ const TeamDetails = () => {
       <div className="arrow-team">
         <Arrow sx={{ fontSize: 40 }} onClick={() => navigate(-1)}></Arrow>
         {/* <h3>Teams</h3> */}
-        <img width="50px" src={logo}></img>
+        <Link to="/">
+          <img width="50px" src={logo} className="logo-lap"></img>
+        </Link>
       </div>
       <div className="team-details">
-        <div>
-          <img height="180 " src={team.logo}></img>
+        <div className="pic-lap">
+          <img src={team.logo}></img>
         </div>
         <div className="team-details1">
           <h1>Teams Details</h1>

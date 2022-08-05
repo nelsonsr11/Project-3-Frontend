@@ -9,6 +9,7 @@ import "./Login.css";
 // import * as React from "react";
 // import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import Arrow from "@mui/icons-material/KeyboardBackspace";
 
 const LogIn = () => {
   const [username, setUsername] = React.useState("");
@@ -61,6 +62,13 @@ const LogIn = () => {
       /> */}
 
       {/* </form> */}
+      <div className="arrow-team1">
+        <Arrow sx={{ fontSize: 40 }} onClick={() => navigate(-1)}></Arrow>
+        {/* <h3>Teams</h3> */}
+        <Link to="/">
+          <img width="50px" className="logo-lap" src={logo}></img>
+        </Link>
+      </div>
 
       <div className="logo-wrapper">
         <img width="200" src={logo} className="logo"></img>

@@ -28,3 +28,20 @@
     justify-content:center ;
 }
 
+
+/* className="pic-lap" */
+
+@media(min-width:1000px){
+    .player-info{
+        border: 3px solid black;
+        border-radius: 2vw;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .player-info > h4{
+        color: #19647E;
+        margin-left: 15px;
+        font-size: 19px;
+    }
+}

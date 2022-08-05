@@ -7,6 +7,7 @@ import "./Signup.css";
 import TextField from "@mui/material/TextField";
 import logo from "../components/images/logo.png";
 import Button from "@mui/material/Button";
+import Arrow from "@mui/icons-material/KeyboardBackspace";
 
 const Signup = () => {
   const [fullname, setFullname] = React.useState("");
@@ -65,6 +66,13 @@ const Signup = () => {
 
   return (
     <div className="signup-main">
+      <div className="arrow-team1">
+        <Arrow sx={{ fontSize: 40 }} onClick={() => navigate(-1)}></Arrow>
+        {/* <h3>Teams</h3> */}
+        <Link to="/">
+          <img width="50px" className="logo-lap" src={logo}></img>
+        </Link>
+      </div>
       <div className="logo-wrapper">
         <img width="130" src={logo} className="logo"></img>
       </div>
@@ -115,7 +123,7 @@ const Signup = () => {
       </div>
       <h4>{status}</h4>
       <h4>
-        Already have an account? <Link to="/">LogIn</Link>
+        Already have an account? <Link to="/login">LogIn</Link>
       </h4>
 
       {/* </form> */}

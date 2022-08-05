@@ -1,0 +1,46 @@
+.profile22{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color:#C1CAD6;
+    height: 100vh;
+}
+
+.profile-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.logout{
+    margin-right: 100px;
+}
+
+/* .name{
+     border: solid black;
+    border-radius: 5px;
+} */
+
+.arrow-team3{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:1000px){
+     .name{
+        /* border: solid black;
+        border-radius: 5px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    } 
+    .profile22 > h1{
+        font-size: 100px;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+}
+

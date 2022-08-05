@@ -40,7 +40,9 @@ const FavoriteTeams = () => {
         >
           Players
         </Arrow>
-        <img width="50px" src={logo}></img>
+        <Link to="/">
+          <img width="50px" className="logo-lap" src={logo}></img>
+        </Link>
       </div>
       <h1>Favorite Teams</h1>
       <hr></hr>
@@ -53,7 +55,7 @@ const FavoriteTeams = () => {
               // className="link-teams2"
               to={`/team/team-details/${brr.teamId}`}
             >
-              <img width="100" src={brr.teamImg}></img>
+              <img width="100" className="team-det" src={brr.teamImg}></img>
             </Link>
             <h2>{brr.fullName}</h2>
             {/* <button onClick={() => removeTeam(favTeams[0])}>Remove TEAM</button> */}

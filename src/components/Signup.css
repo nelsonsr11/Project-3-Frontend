@@ -13,3 +13,12 @@
 .button2{
     margin-top: 8vw;
 }
+
+@media(min-width:1000px){
+    .button2{
+        margin-top: 20px
+    }
+    .signup-main >h4{
+        text-align: center;
+    }
+}
